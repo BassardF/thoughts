@@ -1,4 +1,4 @@
-.main{
+.main, .main-trans-wrapper{
   height: 100%;
 }
 
@@ -10,6 +10,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.transi-enter {
+  opacity: 0.01;
+  transform: scale(0.9);
+}
+.transi-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 500ms ease-out;
+}
+.transi-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.transi-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9);
+  transition: all 500ms ease-out;
 }
 
 .main .topbar .left .arrow{
